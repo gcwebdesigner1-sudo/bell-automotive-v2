@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bell Automotive Service — Auto Repair in Anderson, CA</title>
+  <meta name="description" content="Family-owned auto repair shop serving Anderson, Redding & Shasta County since 1999. Engine diagnostics, brakes, oil changes, AC, and more.">
+  <link rel="canonical" href="https://bellautomotiveservice.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"AutoRepair","name":"Bell Automotive Service","telephone":"(530) 365-1599","email":"info@bellautomotiveservice.com","address":{"@type":"PostalAddress","streetAddress":"2130 Balls Ferry Rd","addressLocality":"Anderson","addressRegion":"CA","postalCode":"96007","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"90"},"priceRange":"$$","areaServed":["Anderson","Redding","Shasta County"],"foundingDate":"1999"}
+  </script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --blue:#1a6fc4;
+  --blue2:#1559a0;
+  --blue-light:#e8f1fb;
+  --blue-pill:#2980d4;
+  --txt:#1a1a2e;
+  --txt2:#555;
+  --txt3:#888;
+  --bg:#fff;
+  --bg2:#f5f7fa;
+  --bg3:#eef2f8;
+  --border:#e0e6ef;
+  --topbar:#1559a0;
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--txt);background:var(--bg);overflow-x:hidden}
+
+/* ── TOP BAR ── */
+.topbar{background:var(--topbar);padding:0 48px;height:40px;display:flex;align-items:center;justify-content:space-between}
+.topbar-left,.topbar-right{display:flex;align-items:center;gap:24px}
+.topbar-item{display:flex;align-items:center;gap:7px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:500;color:rgba(255,255,255,.85);letter-spacing:.03em}
+.topbar-item svg{width:14px;height:14px;opacity:.8;flex-shrink:0}
+.topbar-social{display:flex;align-items:center;gap:12px}
+.topbar-social a{color:rgba(255,255,255,.7);font-size:13px;text-decoration:none;transition:color .2s}
+.topbar-social a:hover{color:#fff}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.08);padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:20px;letter-spacing:.02em;color:var(--txt);text-decoration:none}
+.nav-logo span{color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--txt);text-decoration:none;transition:color .2s;position:relative;padding-bottom:4px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--blue);transition:width .25s}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--blue-pill);color:#fff!important;padding:11px 24px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none!important;transition:background .2s,transform .15s;white-space:nowrap}
+.nav-cta::after{display:none!important}
+.nav-cta svg{width:16px;height:16px}
+.nav-cta:hover{background:var(--blue2);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--txt);transition:.3s}
+.mobile-menu{display:none;position:fixed;inset:112px 0 0;background:#fff;z-index:999;flex-direction:column;padding:24px;gap:4px;box-shadow:0 8px 32px rgba(0,0,0,.1)}
+.mobile-menu a{font-family:'Montserrat',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--txt);text-decoration:none;padding:14px 0;border-bottom:1px solid var(--border)}
+.mobile-menu.open{display:flex}
+
+/* ── HERO ── */
+#hero{position:relative;height:88vh;min-height:580px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1920&q=80');background-size:cover;background-position:center 30%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,20,50,.72) 0%,rgba(10,20,50,.62) 60%,rgba(10,20,50,.78) 100%)}
+.hero-content{position:relative;padding:0 24px;max-width:900px}
+.hero-sub{display:flex;align-items:center;justify-content:center;gap:16px;font-family:'Montserrat',sans-serif;font-style:italic;font-weight:500;font-size:16px;color:rgba(255,255,255,.8);margin-bottom:20px;letter-spacing:.02em}
+.hero-sub::before,.hero-sub::after{content:'';display:block;width:60px;height:1px;background:rgba(255,255,255,.4)}
+.hero-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(48px,9vw,110px);line-height:.95;text-transform:uppercase;letter-spacing:-.02em;color:#fff;margin-bottom:16px}
+.hero-title span{color:#5bb3f5}
+.hero-tagline{font-size:17px;color:rgba(255,255,255,.75);margin-bottom:36px;font-weight:400}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--txt);padding:16px 36px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 32px rgba(0,0,0,.2);transition:transform .2s,box-shadow .2s}
+.hero-pill:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.hero-pill svg{width:18px;height:18px;color:var(--blue)}
+.hero-brands{position:absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;gap:0;overflow:hidden}
+.hero-brand-item{flex:1;display:flex;align-items:center;justify-content:center;padding:14px 20px;border-right:1px solid rgba(255,255,255,.12);font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;letter-spacing:.08em;color:rgba(255,255,255,.7);text-transform:uppercase}
+.hero-brand-item:last-child{border-right:none}
+
+/* ── FEATURES STRIP ── */
+#features{background:var(--blue);padding:0 48px}
+.features-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.feature-item{padding:28px 24px;display:flex;align-items:center;gap:14px;border-right:1px solid rgba(255,255,255,.15)}
+.feature-item:last-child{border-right:none}
+.feature-icon{width:40px;height:40px;flex-shrink:0;color:rgba(255,255,255,.9)}
+.feature-icon svg{width:100%;height:100%}
+.feature-text strong{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:2px}
+.feature-text span{font-size:12px;color:rgba(255,255,255,.65)}
+
+/* ── SERVICES ── */
+#services{padding:96px 48px;background:var(--bg2)}
+.section-tag{display:inline-flex;align-items:center;gap:8px;background:var(--blue-light);color:var(--blue);font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:6px 14px;border-radius:50px;margin-bottom:14px}
+.section-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(28px,4vw,48px);line-height:1.1;color:var(--txt);margin-bottom:12px}
+.section-title span{color:var(--blue)}
+.section-desc{font-size:16px;color:var(--txt2);line-height:1.7;max-width:480px}
+.services-header{max-width:1100px;margin:0 auto 52px;display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
+.services-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:#fff;border-radius:12px;padding:36px 32px;border:1px solid var(--border);transition:box-shadow .25s,transform .25s,border-color .25s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.service-card:hover{box-shadow:0 12px 40px rgba(26,111,196,.12);transform:translateY(-4px);border-color:rgba(26,111,196,.2)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon-wrap{width:56px;height:56px;background:var(--blue-light);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--blue)}
+.service-icon-wrap svg{width:28px;height:28px}
+.service-name{font-family:'Montserrat',sans-serif;font-weight:800;font-size:17px;color:var(--txt);margin-bottom:10px}
+.service-desc{font-size:14px;color:var(--txt2);line-height:1.65}
+.service-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:var(--blue);text-decoration:none;transition:gap .2s}
+.service-link:hover{gap:10px}
+
+/* ── ABOUT ── */
+#about{padding:96px 48px;background:#fff}
+.about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-main{width:100%;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(26,111,196,.15)}
+.about-img-main img{width:100%;height:480px;object-fit:cover;display:block}
+.about-badge{position:absolute;bottom:-24px;right:-24px;background:var(--blue);color:#fff;border-radius:16px;padding:24px 28px;box-shadow:0 8px 32px rgba(26,111,196,.35);text-align:center}
+.about-badge-num{font-family:'Montserrat',sans-serif;font-weight:900;font-size:42px;line-height:1;display:block}
+.about-badge-txt{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-top:4px;display:block}
+.about-content .section-tag{margin-bottom:14px}
+.about-content .section-title{margin-bottom:20px}
+.about-body{font-size:16px;color:var(--txt2);line-height:1.8;margin-bottom:28px}
+.about-list{list-style:none;margin-bottom:32px}
+.about-list li{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--txt);font-weight:500;padding:8px 0;border-bottom:1px solid var(--border)}
+.about-list li:last-child{border-bottom:none}
+.about-list li svg{color:var(--blue);width:18px;height:18px;flex-shrink:0}
+.btn-blue{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;padding:14px 32px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-decoration:none;transition:background .2s,transform .15s}
+.btn-blue:hover{background:var(--blue2);transform:translateY(-1px)}
+
+/* ── STATS ── */
+#stats{background:var(--bg2);padding:72px 48px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.stat-card{background:var(--bg2);text-align:center;padding:40px 24px}
+.stat-num{font-family:'Montserrat',sans-serif;font-weight:900;font-size:52px;color:var(--blue);line-height:1}
+.stat-label{font-size:13px;color:var(--txt2);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
+
+/* ── REVIEWS ── */
+#reviews{padding:96px 48px;background:#fff}
+.reviews-header{max-width:1100px;margin:0 auto 52px;text-align:center}
+.reviews-header .section-tag{margin:0 auto 16px}
+.reviews-header .section-title{margin-bottom:12px}
+.reviews-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review-card{background:var(--bg2);border-radius:12px;padding:36px 28px;border:1px solid var(--border);transition:box-shadow .25s}
+.review-card:hover{box-shadow:0 8px 32px rgba(26,111,196,.1)}
+.review-stars{display:flex;gap:3px;margin-bottom:16px}
+.review-stars span{color:#f59e0b;font-size:18px}
+.review-text{font-size:15px;color:var(--txt2);line-height:1.7;margin-bottom:20px;font-style:italic}
+.review-author{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:var(--txt)}
+.review-location{font-size:12px;color:var(--txt3);margin-top:3px}
+.reviews-cta{max-width:1100px;margin:40px auto 0;text-align:center}
+.reviews-cta a{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;text-decoration:none;border-bottom:2px solid var(--blue-light);padding-bottom:2px;transition:border-color .2s}
+.reviews-cta a:hover{border-color:var(--blue)}
+
+/* ── CTA BANNER ── */
+#cta{background:var(--blue);padding:80px 48px;position:relative;overflow:hidden}
+#cta::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.04)}
+#cta::after{content:'';position:absolute;left:-60px;bottom:-80px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.04)}
+.cta-inner{max-width:1100px;margin:0 auto;position:relative;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.cta-text h2{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(28px,4vw,48px);color:#fff;line-height:1.15;margin-bottom:10px}
+.cta-text p{font-size:16px;color:rgba(255,255,255,.75);max-width:480px;line-height:1.6}
+.cta-actions{display:flex;flex-direction:column;align-items:flex-end;gap:12px;flex-shrink:0}
+.cta-phone{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(28px,4vw,46px);color:#fff;text-decoration:none;letter-spacing:-.01em;transition:opacity .2s}
+.cta-phone:hover{opacity:.85}
+.cta-hours{font-size:13px;color:rgba(255,255,255,.65);font-weight:500;text-align:right}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--blue);padding:14px 32px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn-white:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+
+/* ── GALLERY ── */
+#gallery{padding:96px 48px;background:var(--bg2)}
+.gallery-header{max-width:1100px;margin:0 auto 40px}
+.gallery-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:260px 260px;gap:12px}
+.gallery-cell{overflow:hidden;border-radius:10px}
+.gallery-cell.tall{grid-row:span 2}
+.gallery-cell img{width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .4s;filter:brightness(.9)}
+.gallery-cell:hover img{transform:scale(1.06);filter:brightness(1)}
+
+/* ── FOOTER ── */
+footer{background:var(--txt);padding:64px 48px 28px}
+.footer-top{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px}
+.footer-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:20px;color:#fff;text-decoration:none;display:inline-block;margin-bottom:14px}
+.footer-logo span{color:#5bb3f5}
+.footer-brand p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.7;max-width:260px}
+.footer-col h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:16px}
+.footer-col p,.footer-col a{display:block;font-size:14px;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:8px;line-height:1.6;transition:color .2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.35)}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal.left{transform:translateX(-20px)}
+.reveal.right{transform:translateX(20px)}
+.reveal.left.visible,.reveal.right.visible{transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .topbar{display:none}
+  .about-inner{grid-template-columns:1fr;gap:48px}
+  .about-badge{right:16px;bottom:16px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}
+  .gallery-cell.tall{grid-row:span 1}
+  .reviews-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+}
+@media(max-width:768px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  #hero{height:auto;padding:80px 0 0}
+  .hero-brands{position:static;margin-top:40px}
+  .hero-brand-item{font-size:10px;padding:12px 8px}
+  #features{padding:0 20px}
+  .features-grid{grid-template-columns:1fr 1fr}
+  .feature-item:nth-child(2){border-right:none}
+  #services{padding:64px 20px}
+  .services-header{flex-direction:column;align-items:flex-start;gap:12px}
+  .services-grid{grid-template-columns:1fr}
+  #about{padding:64px 20px}
+  #stats{padding:48px 20px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  #reviews{padding:64px 20px}
+  #cta{padding:60px 20px}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+  .cta-actions{align-items:flex-start}
+  .cta-hours{text-align:left}
+  #gallery{padding:64px 20px}
+  .gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .gallery-cell,.gallery-cell.tall{height:220px;grid-row:span 1}
+  footer{padding:48px 20px 24px}
+  .footer-top{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Book Now &nbsp;(530) 365-1599
+    </div>
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      2130 Balls Ferry Rd, Anderson, CA
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="topbar-social">
+      <a href="#" aria-label="Facebook">&#9654;</a>
+      <a href="#" aria-label="Instagram">&#9654;</a>
+      <a href="#" aria-label="Google">&#9654;</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Bell<span>.</span>Automotive</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#cta">Contact</a></li>
+  </ul>
+  <a href="tel:5303651599" class="nav-cta">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Book a Service
+  </a>
+  <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mob">
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#reviews" onclick="closeMob()">Reviews</a>
+  <a href="tel:5303651599" onclick="closeMob()" style="color:var(--blue)">&#9742; (530) 365-1599</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-sub">Trusted Auto Repair Since 1999</div>
+    <h1 class="hero-title">Have a<br><span>Safe</span> Drive</h1>
+    <p class="hero-tagline">Family-owned service you can count on — Anderson, Redding &amp; Shasta County</p>
+    <a href="tel:5303651599" class="hero-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call (530) 365-1599
+    </a>
+  </div>
+  <div class="hero-brands">
+    <div class="hero-brand-item">Engine Repair</div>
+    <div class="hero-brand-item">Brake Service</div>
+    <div class="hero-brand-item">Oil Changes</div>
+    <div class="hero-brand-item">AC Service</div>
+    <div class="hero-brand-item">Electrical</div>
+    <div class="hero-brand-item">Inspections</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="features-grid">
+    <div class="feature-item reveal">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="feature-text">
+        <strong>Trusted &amp; Certified</strong>
+        <span>25+ years of proven service</span>
+      </div>
+    </div>
+    <div class="feature-item reveal" style="transition-delay:.08s">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="feature-text">
+        <strong>Fast Turnaround</strong>
+        <span>Most repairs same day</span>
+      </div>
+    </div>
+    <div class="feature-item reveal" style="transition-delay:.16s">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div class="feature-text">
+        <strong>Fair Pricing</strong>
+        <span>No hidden fees, ever</span>
+      </div>
+    </div>
+    <div class="feature-item reveal" style="transition-delay:.24s">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="feature-text">
+        <strong>Family Owned</strong>
+        <span>Serving the community since 1999</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div class="reveal left">
+      <div class="section-tag">Our Services</div>
+      <h2 class="section-title">Everything Your<br><span>Vehicle Needs</span></h2>
+    </div>
+    <p class="section-desc reveal right">From routine oil changes to complex engine diagnostics — we handle every make and model with honesty and expertise.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="10"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4M8.3 8.3l2.8 2.8M36.9 36.9l2.8 2.8M8.3 39.7l2.8-2.8M36.9 11.1l2.8-2.8"/></svg>
+      </div>
+      <h3 class="service-name">Engine Diagnostics</h3>
+      <p class="service-desc">State-of-the-art scan tools to pinpoint issues fast — no guessing, no unnecessary repairs, just honest answers.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.08s">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="8"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4"/></svg>
+      </div>
+      <h3 class="service-name">Brake Service</h3>
+      <p class="service-desc">Full brake inspections, pad &amp; rotor replacement, fluid flushes, and caliper service — keeping you safe on the road.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.16s">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="24" cy="24" rx="18" ry="10"/><path d="M6 24c0 5.5 8.1 10 18 10s18-4.5 18-10"/><path d="M6 18c0-5.5 8.1-10 18-10s18 4.5 18 10"/></svg>
+      </div>
+      <h3 class="service-name">Oil Changes</h3>
+      <p class="service-desc">Quick, thorough oil and filter service using quality fluids matched to your vehicle's manufacturer specifications.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.08s">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20h32v16a4 4 0 01-4 4H12a4 4 0 01-4-4V20zM16 20V14a8 8 0 0116 0v6"/><path d="M24 28v4"/></svg>
+      </div>
+      <h3 class="service-name">AC Repair</h3>
+      <p class="service-desc">Stay cool in Shasta County summers — AC recharge, leak detection, compressor service, and full system repair.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.16s">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="28" height="20" rx="3"/><path d="M16 14V10M32 14V10M10 22h28"/></svg>
+      </div>
+      <h3 class="service-name">Battery &amp; Electrical</h3>
+      <p class="service-desc">Battery testing and replacement, alternator, starter motor, wiring, and complete electrical system diagnostics.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.24s">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38l8-16 8 8 8-20 8 28"/></svg>
+      </div>
+      <h3 class="service-name">Pre-Purchase Inspections</h3>
+      <p class="service-desc">Buying a used car? Get the full picture before you sign — our thorough inspections protect your investment.</p>
+      <a href="#cta" class="service-link">Learn More &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap reveal left">
+      <div class="about-img-main">
+        <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=900&q=80" alt="Bell Automotive Service shop" loading="lazy">
+      </div>
+      <div class="about-badge">
+        <span class="about-badge-num">25+</span>
+        <span class="about-badge-txt">Years of<br>Service</span>
+      </div>
+    </div>
+    <div class="about-content reveal right">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title">Family-Owned.<br><span>Community Built.</span></h2>
+      <p class="about-body">Bell Automotive Service has been the trusted choice for auto repair in Anderson and the greater Shasta County area since 1999. Owner Jim Anderson built this shop on one simple promise: treat every customer like family, and do the job right the first time.<br><br>No upsells. No surprises. Just honest diagnostics, fair pricing, and work you can count on.</p>
+      <ul class="about-list">
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          All Makes &amp; Models — Domestic &amp; Import
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Free Estimates on Most Services
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          4.8 ★ on Google — 90+ Reviews
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Mon–Fri 8AM–5:30PM &nbsp;|&nbsp; Sat 8AM–2PM
+        </li>
+      </ul>
+      <a href="tel:5303651599" class="btn-blue">&#9742;&nbsp; Call Us Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Years in Business</div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.1s">
+      <div class="stat-num">4.8★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.2s">
+      <div class="stat-num">90+</div>
+      <div class="stat-label">5-Star Reviews</div>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:.3s">
+      <div class="stat-num">1K+</div>
+      <div class="stat-label">Vehicles Serviced</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-tag">Our Shop</div>
+    <h2 class="section-title">A Shop Built<br><span>for the Work</span></h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-cell tall reveal left">
+      <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Auto repair shop interior" loading="lazy">
+    </div>
+    <div class="gallery-cell reveal" style="transition-delay:.08s">
+      <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&q=80" alt="Engine repair" loading="lazy">
+    </div>
+    <div class="gallery-cell reveal right" style="transition-delay:.08s">
+      <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80" alt="Brake service" loading="lazy">
+    </div>
+    <div class="gallery-cell reveal" style="transition-delay:.16s">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Mechanic at work" loading="lazy">
+    </div>
+    <div class="gallery-cell reveal right" style="transition-delay:.16s">
+      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80" alt="Auto shop service" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reviews-header reveal">
+    <div class="section-tag">Google Reviews</div>
+    <h2 class="section-title">What Our Customers<br><span>Are Saying</span></h2>
+    <p style="color:var(--txt2);font-size:16px;margin-top:12px">4.8 stars &bull; 90 verified Google reviews</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">"Jim and his team are the only people I trust with my truck. Honest, fast, and priced right. They diagnosed an issue two other shops missed. Five stars, every time."</p>
+      <div class="review-author">Mike T.</div>
+      <div class="review-location">Anderson, CA &bull; Google Review</div>
+    </div>
+    <div class="review-card reveal" style="transition-delay:.1s">
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">"Took my car in for a pre-purchase inspection and they were incredibly thorough. Found a hidden issue that saved me from a bad deal. Absolutely worth every penny."</p>
+      <div class="review-author">Sarah K.</div>
+      <div class="review-location">Redding, CA &bull; Google Review</div>
+    </div>
+    <div class="review-card reveal" style="transition-delay:.2s">
+      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="review-text">"Been bringing my family's vehicles here for years. They never upsell you, explain everything clearly, and the work is always done right. Best shop in Shasta County."</p>
+      <div class="review-author">David R.</div>
+      <div class="review-location">Shasta County &bull; Google Review</div>
+    </div>
+  </div>
+  <div class="reviews-cta reveal">
+    <a href="https://maps.google.com" target="_blank" rel="noopener">View all 90 reviews on Google &rarr;</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="cta-text reveal left">
+      <h2>Ready to Book<br>Your Service?</h2>
+      <p>Give us a call and we'll get you in fast. Honest work, fair prices — that's the Bell Automotive promise since 1999.</p>
+    </div>
+    <div class="cta-actions reveal right">
+      <a href="tel:5303651599" class="cta-phone">(530) 365-1599</a>
+      <p class="cta-hours">Mon–Fri &nbsp;8:00 AM – 5:30 PM &nbsp;|&nbsp; Sat &nbsp;8:00 AM – 2:00 PM</p>
+      <a href="tel:5303651599" class="btn-white">&#9742;&nbsp; Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#hero" class="footer-logo">Bell<span>.</span>Automotive</a>
+      <p>Family-owned auto repair serving Anderson, Redding, and Shasta County since 1999. Honest work, fair prices, every time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <p>2130 Balls Ferry Rd<br>Anderson, CA 96007</p>
+      <a href="tel:5303651599">(530) 365-1599</a>
+      <a href="mailto:info@bellautomotiveservice.com">info@bellautomotiveservice.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Mon–Fri: 8:00 AM – 5:30 PM</p>
+      <p>Saturday: 8:00 AM – 2:00 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bell Automotive Service. All rights reserved.</p>
+    <p>Anderson, CA &bull; Serving Shasta County Since 1999</p>
+  </div>
+</footer>
+
+<script>
+var ham=document.getElementById('ham'),mob=document.getElementById('mob');
+ham.addEventListener('click',function(){mob.classList.toggle('open')});
+function closeMob(){mob.classList.remove('open')}
+
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+</script>
+</body>
+</html>
